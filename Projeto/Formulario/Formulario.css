@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*TODO: MEDIA*/
+
+/*GERAL*/
+html {
+    background-image: url("hardware.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #0000005b;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+}
+
+h4 {
+    color:white;
+}
+
+#title {
+    color: white;
+    font-family: tahoma;
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+i {
+    color: white;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+/*BUTTONS*/
+.button {
+    background-color: #53a8db;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #98d4dd;
+}
+
+#submeter {
+    margin: 5px 15px 0px 25px;
+    border: none;
+    width:90%;
+}
+
+#limpar {
+    margin: 15px 15px 20px 25px;
+    border: none;
+    width: 90%;
+}
+
+/*FORM-RIGHT*/
+
+.right {
+    color: white;;
+    width: 465px;
+}
+
+#form {
+    background-color: #00000098;
+}
+
+.item{
+    display: flex;
+    text-align: center;
+    margin-right: 25px;
+}
+
+#header  {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+
+label {
+    flex: 1;
+    text-align: left;
+    line-height: 3em;
+    margin-left: 20px;
+    width: 2px;
+}
+
+input {
+    flex: 1.2;
+    border: 1px solid red;
+    margin-left: 20px;
+    margin: 19px 0;
+    color: white;
+}
+
+select {
+    flex: 1.19;
+    margin: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], input[type=password], select {
+    width: 90px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding-left: 5px;
+}
+
+select:focus {
+    color: black;
+    background-color: #9da5a5;
+    padding-left: 10px;
+    border: none;
+}
+
+select option:checked {
+    display: none;
+}
+
+
+.terms {
+    display: flex;
+    margin-top: 30px;
+}
+
+input[type="checkbox"] {
+    margin-top: 19px;
+    margin-left: 30px;
+    height: 10%;
+}
+
+p {
+    margin-left: 15px;
+    width: 90%;
+}
+
+a {
+    color: #53a8db;
+}
+
+.item a {
+    color: red;
+}
+
+input::placeholder {
+    visibility: hidden;
+}
+
+/*TITLE-LEFT*/
+.left {
+    width: 30%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#img1 {
+    margin-bottom: 20px;
+}
+
+/*SUCCESS-DIV*/
+
+#success {
+    display: none;
+    background-color: #00000098;
+    color: greenyellow;
+    width: 79%;
+    padding-top: 15px;
+}
+
+#message {
+    display: flex;
+    border: 1px solid white;
+    margin: 10px 20px 35px 20px;
+}
+
+.centered {
+    text-align: center;
+    margin-left: 190px;
+    width: 65%;
+}
+
+
+/*JS*/
+
+.validation-error-message-date{
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-password{
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-password2{
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-name{ 
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-email{ 
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-phone{ 
+    display:none;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.validation-error-message-terms{ 
+    display: none;
+    margin-top: 13px;
+    margin-right: 70px;
+}
+
+
+/*MEDIA-QUERIES*/
+@media (max-width: 568px) {
+    input::placeholder {
+        visibility: visible;
+        color: white;
+    }
+
+    h1 {
+        margin-top: 25px;
+    }
+
+    i {
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+
+    label{
+        display: none;
+    }
+
+    .item {
+        display: flex;
+        text-align: center;
+    }
+
+    #form {
+        margin-top: 20px;
+        width: 355px;
+        margin-left: 35px;
+    }
+
+    input {
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    
+    select {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    .terms {
+        font-size: 12px; 
+        align-items: center; 
+        margin-top: 10px;
+    }
+
+    p {
+        margin-left: 12px;
+    }
+    .terms a {
+        display: inline-block;
+    }
+    
+    .terms input[type="checkbox"] {
+        margin: 10px 0px 10px 35px;
+        display: flex;
+    }
+    
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #submeter {
+        margin-left: 22px;
+        width: 87%;
+    }
+
+    #limpar {
+        margin-left: 22px;
+        width: 87%;
+    }
+    
+    #buttons {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+        
+    #buttons a {
+        width: 80px;
+    }
+        
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sub-title {
+        width: 110%;
+        text-align: center;
+        margin: 0;
+    }
+        
+    #title {
+        margin: 0;
+        text-align: center;
+    }
+        
+    .left {
+        margin-top: 100px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img1 {
+        margin: 0;
+    }
+}
+/* NEEDS TO WORK */
+@media (min-width: 568px) and (max-width: 768px) {
+
+    input::placeholder {
+        visibility: visible;
+        color: white;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    i {
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+
+    label{
+        display: none;
+    }
+
+    .item {
+        display: flex;
+        text-align: center;
+    }
+
+    #form {
+        margin-top: 20px;
+        width: 355px;
+        margin-left: 35px;
+    }
+
+    input {
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    
+    select {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    .terms {
+        font-size: 12px; 
+        align-items: center; 
+        margin-top: 10px;
+    }
+
+    p {
+        margin-left: 12px;
+    }
+    .terms a {
+        display: inline-block;
+    }
+    
+    .terms input[type="checkbox"] {
+        margin: 10px 0px 10px 35px;
+        display: flex;
+    }
+    
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submeter {
+        margin-left: 22px;
+        width: 87%;
+    }
+
+    #limpar {
+        margin-left: 22px;
+        width: 87%;
+    }
+    
+    #buttons {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+        
+    #buttons a {
+        width: 80px;
+    }
+        
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sub-title {
+        width: 110%;
+        text-align: center;
+        margin: 0;
+    }
+        
+    #title {
+        margin: 0;
+        text-align: center;
+    }
+        
+    .left {
+        margin-top: 100px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img1 {
+        margin: 0;
+    }
+}
