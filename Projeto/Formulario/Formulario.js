@@ -162,7 +162,7 @@ submitButton.addEventListener("click", function(event) {
         
         form.style.display = "none";
         success.style.display = "block";
-        document.querySelector(".left").classList.toggle("Center");
+        document.querySelector(".left").classList.toggle("centered");
     } else if (!terms.checked) {
         termsError.style.display = "block";
     }
@@ -172,4 +172,4 @@ terms.addEventListener("click", function() {
     if (terms.checked) {
       termsError.style.display = "none";
     }
-  });
+});

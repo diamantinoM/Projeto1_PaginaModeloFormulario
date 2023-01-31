@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/*TODO: MEDIA*/
+/*TODO: MEDIA CHANGE BUTTONS*/
 
 /*GERAL*/
 html {
@@ -70,13 +70,13 @@ i {
 #submeter {
     margin: 5px 15px 0px 25px;
     border: none;
-    width:90%;
+    width:72%;
 }
 
 #limpar {
     margin: 15px 15px 20px 25px;
     border: none;
-    width: 90%;
+    width: 72%;
 }
 
 /*FORM-RIGHT*/
@@ -194,7 +194,7 @@ input::placeholder {
     display: none;
     background-color: #00000098;
     color: greenyellow;
-    width: 79%;
+    width: 60%;
     padding-top: 15px;
 }
 
@@ -206,7 +206,7 @@ input::placeholder {
 
 .centered {
     text-align: center;
-    margin-left: 190px;
+    margin-left: 200px;
     width: 65%;
 }
 
