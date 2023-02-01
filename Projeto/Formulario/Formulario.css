@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/*TODO: MEDIA CHANGE BUTTONS*/
-
 /*GERAL*/
 html {
     background-image: url("hardware.jpg");
@@ -324,12 +322,12 @@ input::placeholder {
 
     #submeter {
         margin-left: 22px;
-        width: 87%;
+        width: 65%;
     }
 
     #limpar {
         margin-left: 22px;
-        width: 87%;
+        width: 65%;
     }
     
     #buttons {
@@ -371,7 +369,7 @@ input::placeholder {
         margin: 0;
     }
 }
-/* NEEDS TO WORK */
+
 @media (min-width: 568px) and (max-width: 768px) {
 
     input::placeholder {
@@ -379,28 +377,13 @@ input::placeholder {
         color: white;
     }
 
-    h1 {
-        margin-top: 10px;
-    }
-
-    i {
-        margin-top: 12px;
-        margin-right: 10px;
-    }
-
-    label{
+    label {
         display: none;
     }
 
     .item {
         display: flex;
         text-align: center;
-    }
-
-    #form {
-        margin-top: 20px;
-        width: 355px;
-        margin-left: 35px;
     }
 
     input {
@@ -413,76 +396,18 @@ input::placeholder {
         margin-left: 35px;
     }
 
-    .terms {
-        font-size: 12px; 
-        align-items: center; 
-        margin-top: 10px;
-    }
-
-    p {
-        margin-left: 12px;
-    }
-    .terms a {
-        display: inline-block;
-    }
-    
-    .terms input[type="checkbox"] {
-        margin: 10px 0px 10px 35px;
-        display: flex;
-    }
-    
-
-    #main-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #submeter {
-        margin-left: 22px;
-        width: 87%;
-    }
-
-    #limpar {
-        margin-left: 22px;
-        width: 87%;
-    }
-    
     #buttons {
         display: flex;
-        justify-content: center;
-        margin: 0;
+        flex-direction: column;
+        margin-right: 0px;
     }
-        
-    #buttons a {
-        width: 80px;
+    
+    #form {
+        width: 420px;
     }
-        
-    a {
-        display: flex;
-        justify-content: center;
-    }
-
-    #sub-title {
-        width: 110%;
-        text-align: center;
-        margin: 0;
-    }
-        
-    #title {
-        margin: 0;
-        text-align: center;
-    }
-        
+    
     .left {
-        margin-top: 100px;
-        width: 500px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #img1 {
-        margin: 0;
     }
 }
